@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="species">
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Rabbit</item>
+        <!-- Add more species as needed -->
+    </array>
+    <array name="breed">
+        <item>Breed 1</item>
+        <item>Breed 2</item>
+        <item>Breed 3</item>
+        <!-- Add more breed items as needed -->
+    </array>
+    <array name="age">
+        <item>Less than 1 year</item>
+        <item>1-3 years</item>
+        <item>4-6 years</item>
+        <item>7+ years</item>
+        <!-- Add more age items as needed -->
+    </array>
+</resources>

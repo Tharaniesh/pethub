@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pet Adoption"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- This is just a placeholder for each favorite pet item. You can replace it with your desired layout -->
+        <TextView
+            android:id="@+id/textViewFavoritePet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Favorite Pet"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewFavoritePet2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Favorite Pet"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewFavoritePet3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Favorite Pet"
+            android:textSize="18sp"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"> <!-- Add padding to increase touch target size -->
+
+    <!-- Pet Adoption Title -->
+    <TextView
+        android:id="@+id/textViewPetAdoption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Adoption"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:layout_below="@id/textViewPetAdoption"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Filter Options -->
+    <LinearLayout
+        android:id="@+id/linearLayoutFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/editTextSearch"
+        android:layout_marginBottom="16dp">
+
+        <!-- Species Filter -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"> <!-- Add padding to increase touch target size -->
+            <Spinner
+                android:id="@+id/spinnerSpecies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="Species"
+                android:entries="@array/species"/>
+        </LinearLayout>
+
+        <!-- Breed Filter -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"> <!-- Add padding to increase touch target size -->
+            <Spinner
+                android:id="@+id/spinnerBreed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="Breed"
+                android:entries="@array/breed"/>
+        </LinearLayout>
+
+        <!-- Age Filter -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"> <!-- Add padding to increase touch target size -->
+            <Spinner
+                android:id="@+id/spinnerAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="Age"
+                android:entries="@array/age"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Pet Cards (ListView or RecyclerView) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayoutFilters"
+        android:layout_above="@id/buttonLoadMore"/>
+
+    <!-- Load More Button -->
+    <Button
+        android:id="@+id/buttonLoadMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load More"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
